@@ -13,8 +13,41 @@ ol {
 
 a {
   text-decoration: none;
+  font-style: normal;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 111%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  color: #2e2f42;
+}
+
+.section-text {
+}
 /* #region Logo settings */
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -39,8 +72,8 @@ a {
 /* #endregion */
 
 /* #region Header */
-.header-nav li,
-.header-address li {
+.header-nav,
+.header-address {
   list-style-type: none;
   text-decoration: none;
 }
@@ -64,24 +97,63 @@ a {
 .header-address:focus {
   color: #404bbf;
 }
+
 /* #endregion */
 
+/* #region Hero section */
 .hero-title {
-  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 56px;
   line-height: 107%;
-  letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
   background-color: #2e2f42;
 }
 
-h2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 111%;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #2e2f42;
+.order-button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background-color: #4d5ae5;
+  cursor: pointer;
 }
+
+.order-button:hover,
+.order-button:focus {
+  background-color: #404bbf;
+}
+/* #endregion */
+
+/* #region Benefits section */
+.benefits-subtitle {
+}
+
+.benefits-text {
+}
+/* #endregion */
+
+/* #region Team section */
+.team-subtitle {
+  text-align: center;
+}
+
+.team-text {
+  text-align: center;
+}
+/* #endregion */
+
+/* #region Potfolio section */
+.portfolio-subtitle {
+}
+
+.portfolio-text {
+}
+/* #endregion */
+
+/* #region Footer */
+.footer-text {
+  color: #f4f4fd;
+}
+/* #endregion */
